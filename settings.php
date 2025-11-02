@@ -17,3 +17,33 @@ if (isset($_POST['save_secret'])) {
     exit;
 }
 ?>
+<?php include 'layout.php'; ?>
+
+<div class="main">
+<!-- Settings Section -->
+<div id="settingsSection" >
+    <h1>Settings</h1>
+    <div class="card">
+    <form method="POST" action="settings.php">
+        <label><strong>Shared RADIUS Password</strong></label>
+        <div class="input-wrapper">
+        <input type="password" name="radius_secret" id="radius_secret" placeholder="Enter new password" required>
+        <button type="button" id="togglePass" class="eye-btn">👁</button>
+        </div>
+        <button type="submit" name="save_secret" onclick="return confirm('Update Shared RADIUS Password?');">Save Password</button>
+    </form>
+    </div>
+    
+</div>
+</div>
+<script>
+const passInput = document.getElementById("radius_secret");
+const toggleBtn = document.getElementById("togglePass");
+let visible = false;
+
+toggleBtn.addEventListener("click", () => {
+  visible = !visible;
+  passInput.type = visible ? "text" : "password";
+  toggleBtn.style.color = visible ? "#3b82f6" : "#94a3b8";
+});
+</script>

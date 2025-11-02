@@ -1,5 +1,5 @@
 <?php
-$servername = "20.0.0.7";
+$servername = "20.0.0.6";
 $username = "radius";
 $password = "Password123";
 $dbname = "radius";

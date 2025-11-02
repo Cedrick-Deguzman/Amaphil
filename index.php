@@ -1,17 +1,16 @@
+<?php include 'layout.php'; ?>
 <?php include 'devices.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RADIUS Admin Dashboard</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="sidebar">
+  <!-- <div class="sidebar">
     <h2>Admin Panel</h2>
     <a href="#" id="navDevices" class="active">📡 Devices</a>
     <a href="#" id="navSettings">⚙️ Settings</a>
-  </div>
-
+  </div> -->
   <div class="main">
     <!-- Devices Section -->
     <div id="devicesSection">
@@ -58,7 +57,5 @@
       </div>
     </div>
   </div>
-
-  <script src="assets/js/script.js"></script>
 </body>
 </html>
