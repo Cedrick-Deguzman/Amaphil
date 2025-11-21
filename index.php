@@ -1,5 +1,5 @@
 <?php include 'layout.php'; ?>
-<?php include 'devices.php'; ?>
+<?php include './api/devices.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
